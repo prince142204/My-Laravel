@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wix Website Builder</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* * Navigation Bar      */
+        nav {
+            background-color: #4c5542;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #d1d1d1;
+        }
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.examples {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.example {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.example img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .info-section, .card-section, .footer-cols {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-text, .testimonials, .card, .footer-col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+ 
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+          <li><a href="./indix3.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./Practices.html">Practices</a></li>
+          <li><a href="./Our Lawyers.html">Our Lawyers</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    <header>
+        <h1>Wix Website Builder</h1>
+        <p>Create a beautiful and professional website with ease.</p>
+    </header>
+
+    <section class="info-section">
+        <div class="info-text">
+            <h2>Why Choose Wix?</h2>
+            <p>Wix is the leading website builder for individuals and businesses of all sizes. Our intuitive drag-and-drop interface makes it easy to create a stunning website, even if you have no design experience.</p>
+            <ul>
+                <li><strong>Easy to use:</strong> No coding required.</li>
+                <li><strong>Professional templates:</strong> Choose from hundreds of beautiful designs.</li>
+                <li><strong>Mobile-friendly:</strong> Your website will look great on any device.</li>
+                <li><strong>Affordable:</strong> Plans to fit every budget.</li>
+            </ul>
+            <a href="#" class="btn">Get Started Today</a>
+        </div>
+        <div class="image">
+            <img src="https://www.wix.com/marketing/sites/wix-marketing-landing-page-v2/assets/images/wix-landing-hero-new.jpg" alt="Wix website builder">
+        </div>
+    </section>
+
+    <section class="examples">
+        <div class="example">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Example website 1">
+            <h3>Business Website</h3>
+        </div>
+        <div class="example">
+            <img src="https://images.unsplash.com/photo-1522205408451-3e1bbef0fce2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Example website 2">
+            <h3>Portfolio Website</h3>
+        </div>
+        <div class="example">
+            <img src="https://images.unsplash.com/photo-1495474458894-b14b1ca6b825?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Example website 3">
+            <h3>E-commerce Website</h3>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p>Don't just take our word for it. See what real users have to say about Wix.</p>
+        <div class="testimonial">
+            <blockquote>"Wix has made it so easy for me to create a professional website for my business. I love the drag-and-drop interface and the wide range of templates to choose from."</blockquote>
+            <cite>- John Doe, CEO of XYZ Company</cite>
+        </div>
+        <div class="testimonial">
+            <blockquote>"I was skeptical about using a website builder, but Wix has completely changed my mind. It's so user-friendly and affordable. I highly recommend it to anyone looking to create a website."</blockquote>
+            <cite>- Jane Smith, Freelance Writer</cite>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Wix. All rights reserved.</p>
+    </footer>
+</body>
+</html>

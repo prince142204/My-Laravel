@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      /* Navigation Bar */
+      nav {
+        background-color: #4c5542;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline-block;
+        margin: 0 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav ul li a:hover {
+        color: #d1d1d1;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: url("./img2.jpg") no-repeat center center;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+      }
+
+      .coverd {
+        width: 100%;
+        height: 77.6vh;
+        background: rgb(143, 89, 28);
+        opacity: 30%;
+        opacity: (5px);
+        position: absolute;
+        top: 0;
+      }
+      .hero h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 5;
+      }
+
+      .hero p {
+        font-size: 18px;
+        position: relative;
+        z-index: 5;
+        color: rgb(243, 191, 19);
+      }
+
+      /* Info Section */
+      .info-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        background-color: #ffffff;
+      }
+
+      .info-text {
+        width: 65%;
+      }
+
+      .info-text h2 {
+        font-size: 32px;
+        color: #4c5542;
+        margin-bottom: 20px;
+      }
+
+      .info-text p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .testimonials {
+        width: 30%;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-left: 2px solid #4c5542;
+      }
+
+      .testimonials h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #4c5542;
+      }
+
+      .testimonials p {
+        font-size: 14px;
+        color: #555;
+      }
+
+      /* Card Section */
+      #card-section {
+        display: flex;
+        padding: 40px;
+        background-color: #eeeeee;
+        justify-content: space-between;
+      }
+      .card {
+        width: 23%;
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform .2s;
+        
+      }
+      .card:hover{
+        transform: scale(1.1);
+      }
+
+      .card img {
+        max-width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .card h4 {
+        font-size: 20px;
+        color: #4c5542;
+        margin: 20px 0 10px;
+      }
+
+      .card p {
+        font-size: 14px;
+        color: #666;
+      }
+
+      .card button {
+        background-color: #4c5542;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+
+      .card button:hover {
+        background-color: #697d53;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #4c5542;
+        padding: 30px;
+        color: white;
+        text-align: center;
+      }
+
+      footer p {
+        font-size: 14px;
+      }
+
+      footer .footer-cols {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+
+      footer .footer-col {
+        width: 22%;
+      }
+
+      footer .footer-col h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #ffffff;
+      }
+
+      footer .footer-col p {
+        font-size: 14px;
+      }
+
+      footer .social-icons {
+        margin-top: 10px;
+      }
+
+      footer .social-icons a {
+        margin: 0 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+      }
+
+      footer .social-icons a:hover {
+        color: #d1d1d1;
+      }
+
+      @media (max-width: 768px) {
+        .info-section,
+        .card-section,
+        .footer-cols {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .info-text,
+        .testimonials,
+        .card,
+        .footer-col {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      .img {
+        width: 20vw;
+        height: 30vh;
+        object-fit: cover;
+      }
+      button {
+        background: rgb(132, 101, 33);
+        padding: 5px 8px;
+        border-radius: 15px;
+        margin: 1rem;
+        color: #eeeeee;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <ul>
+        <li><a href="./indix3.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./Practices.html">Practices</a></li>
+        <li><a href="./Our Lawyers.html">Our Lawyers</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <div>
+        <!-- <img src="image\patrick-tomasso-GXXYkSwndP4-unsplash.jpg" alt="create"> -->
+        <h1>Manes Winchester Family Law Firm</h1>
+        <p>
+          This is just a place holder. You can replace this with your own
+          content.
+        </p>
+      </div>
+    </div>
+    <div class="coverd"></div>
+
+    <!-- Info Section -->
+    <div class="info-section">
+      <div class="info-text">
+        <h2>This is just a place holder...</h2>
+        <p>
+          This website template has been designed by Free Website Templates for
+          you, for free. You can replace all this text with your own text. You
+          can remove any link to our website from this website template, you're
+          free to use this website template without linking back to us.
+        </p>
+      </div>
+      <div class="testimonials">
+        <h3>Testimonials</h3>
+        <p>
+          "You can remove any link to our website from this website template,
+          you're free to use this website template without linking back to us."
+        </p>
+        <p>- John Doe and Jane Doe</p>
+      </div>
+    </div>
+
+    <!-- Card Section -->
+    <div id="card-section">
+      <div class="card"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Our Address</h5>
+          <p>1234 Law Firm Road, New York, NY</p>
+        </div>
+        <div class="footer-col">
+          <h5>Contact Us</h5>
+          <p>Email: info@lawfirm.com</p>
+          <p>Phone: +1 123 456 7890</p>
+        </div>
+        <div class="footer-col">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <p>&copy; 2024 Manes Winchester Family Law Firm. All Rights Reserved.</p>
+      <p id="typ"></p>
+      <div id="raju"></div>
+    </footer>
+    <script>
+      const images = [
+        {
+          src: "images.jpeg",
+          heading: "Our Lawyers",
+          para: " This is just a place holder, so you can see what the site would look like.",
+        },
+        {
+          src: "IMGL3695.0.jpg",
+          heading: "Get to Know Us More",
+          para: "This is just a place holder, so you can see what the site would look like.",
+        },
+        {
+          src: "hk.webp",
+          heading: "Try our special Brands More",
+          para: "This is just a place holder, so you can see what the site would look like.",
+        },
+        {
+          src: "ye.jpg",
+          heading: "Get to Know Us More",
+          para: "This is just a place holder, so you can see what the site would look like.",
+        },
+      ];
+
+      let cards = document.getElementById("card-section");
+      cards.innerHTML = images
+        .map(
+          (item) => `<div class="card">
+              <img src=${item.src} alt="Lawyers" class="img"/>
+              <h4>${item.heading}</h4>
+              <p>${item.para}
+              </p>
+              <button>Read More</button>
+            </div>`
+        )
+        .join("");
+    </script>
+  </body>
+</html>
